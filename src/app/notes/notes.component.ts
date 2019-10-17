@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 
+export class QuickNotes {
+  title: String;
+  content: String;
+  todo: String;
+}
+
 @Component({
   selector: 'app-notes',
   templateUrl: './notes.component.html',
   styleUrls: ['./notes.component.css']
 })
-
-export class QuickNotes {
-  title = String;
-  content = String;
-  todo = String;
-}
 
 export class NotesComponent implements OnInit {
 
@@ -39,7 +39,7 @@ export class NotesComponent implements OnInit {
   }
 
   //Create our notes
-  create QuickNotes() {
+  createQuickNotes() {
     const newQuickNotes: QuickNotes = {
       title: this.titleModel,
       content: this.contentModel,
