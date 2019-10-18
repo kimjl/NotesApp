@@ -24,16 +24,19 @@ export class NotesComponent implements OnInit {
     this.titleModel = '';
     this.contentModel = '';
     this.todoModel = '';
+    this.quicknotes = [];
 
     //Default QuickNotes
-    const defaultQuickNotes: QuickNotes = {
-      title: 'My Note',
-      content: 'Default Note',
-      todo: 'Default Time for Task'
-    };
-
-    this.quicknotes = [ defaultQuickNotes ];
+    // const defaultQuickNotes: QuickNotes = {
+    //   title: 'My Note',
+    //   content: 'Default Note',
+    //   todo: 'Default Time for Task'
+    // };
+    // 
+    // this.quicknotes = [ defaultQuickNotes ];
    }
+
+
 
   ngOnInit() {
   }
